@@ -1,0 +1,35 @@
+body{
+                color:white;
+                background-image:url("https://hdqwalls.com/download/hacker-wide-2048x1152.jpg") 
+            }
+            #myInput {
+/*                 
+                background-position: 10px 10px;
+                background-repeat: no-repeat; */
+                float:middle;
+                width: 20%;
+                font-size: 16px;
+                padding: 12px 20px 12px 10px;
+                border: 1px solid #ddd;
+                margin-left:100px;
+                margin-bottom: 12px;        
+                }
+            table{ 
+                border:1px solid blue; 
+                margin-left:100px;
+                float:left;
+                margin-top: 50px;
+                
+                
+            }
+            th,td {
+                border: 1px solid white;
+                padding: 10px;
+            }
+            p{
+             font-size: 40px;
+             margin-top:150px;
+             margin-left:100px;
+             
+            }
+            

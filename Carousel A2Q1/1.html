@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="1.css">
+        <style>
+            body{
+                background-image: url("https://cdnb.artstation.com/p/assets/images/images/012/370/613/large/steve-lund-castle-color2.jpg?1534439770");
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+            p{
+                font-size: 100px;
+                text-align: center;
+                margin-top: 100px;
+                font-family:'Courier New', Courier, monospace ;
+            }
+            .myCarousel {display: none}
+            img {vertical-align: middle;height:330px;align-content: center;}
+            .maindiv{
+                vertical-align: middle;
+                margin-top: 300px;
+                
+            }
+            .i1{
+                margin-left: 30px;
+            }
+
+            
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 680px;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            margin-left : -16px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+            right:0px;
+            border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+
+
+
+            /* The dots/bullets/indicators */
+            .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+            background-color: black;
+            }
+
+            /* Fading animation */
+            /* .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            } */
+    /* 
+                @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+                }
+
+                @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+                } */
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+            }
+        </style>
+    </head>
+<body>
+    <p> Game of Thrones</p>
+    <div class="maindiv">
+        <div class="myCarousel">
+            <img class="i1"src="https://assets1.ignimgs.com/2018/12/26/jon-1-1545858295948_1280w.jpg" >
+            <img src="https://assets1.ignimgs.com/2018/12/26/dany-4-1545858384618_1280w.jpg" >
+            <img src="https://assets1.ignimgs.com/2018/12/26/tyrion-3-1545858535814_1280w.jpg" >
+        </div>
+        <div class="myCarousel">
+            <img class ="i1"src="https://assets1.ignimgs.com/2018/12/26/sansa-2-1545858207195_1280w.jpg" >
+            <img src="https://assets1.ignimgs.com/2018/12/26/arya-1-1545856930843_1280w.png">
+            <img src="https://assets1.ignimgs.com/2018/12/26/bran-1-1545858101701_1280w.jpg">
+        </div>
+        <div class="myCarousel">
+            <img class="i1" src="https://assets1.ignimgs.com/2018/12/26/cersei-5-1545858463859_1280w.jpg">
+            <img src="https://assets1.ignimgs.com/2018/12/26/jaime-5-1545858635935_1280w.png">
+        </div>   
+        <a class="prev" id="prv" onclick="plus(-1)">&#10094;</a>
+        <a class="next" id="nxt" onclick="plus(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="current(1)"></span> 
+    <span class="dot" onclick="current(2)"></span> 
+    <span class="dot" onclick="current(3)"></span> 
+    </div>
+
+<script src="1.js">
+ </script>
+
+</body>
+</html>
